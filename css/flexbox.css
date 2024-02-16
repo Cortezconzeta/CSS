@@ -2,12 +2,34 @@
     max-width: 90%;
     height: 600px;
     border: 10px solid black;
+    display: flex;
+    /* justify-content: Por defecto: stuck o left */
+    /* Lleva a los hijos a la derecha */
+    justify-content: end;
+    /* Coloca el primero y el último en los bordes y reparte el espacio entr eel resto. */
+    justify-content: space-between;
+    justify-content: space-around;
+    /* Coloca a los hiojs en el centro */
+    justify-content: center;
+   
+/* flexdirection es row de forma predeterminada. Determina el eje principal  */
+/* Rowreverse invierte el sentido */
+    flex-direction:row-reverse;
+    /* Justifica los hijos en el segundo eje */
+    align-items: center;
+     /* Espacio entre hijos */
+    gap: 20px;
+/* Refiere a si hay o no un sallto de linea. Por defeto no salta (no-wrap). Se activa para que el contenido se vea bien en el móvil (pantalla más angosta)*/
+    flex-wrap: wrap;
+    
+
 }
 
 .hijo {
     background: #ccc;
     border: 5px solid red;
-    width: 100px;
-    height: 100px;
+    width: 10px;
+    height: 10px;
+    /* display: inline; */
 }
 
