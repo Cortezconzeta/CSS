@@ -1,0 +1,12 @@
+.padre {
+    max-width: 90%;
+    height: 600px;
+    border: 10px solid black;
+}
+
+.hijo {
+    background: #ccc;
+    border: 5px solid red;
+    width: 100px;
+    height: 100px;
+}

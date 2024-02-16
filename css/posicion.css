@@ -1,0 +1,74 @@
+*{
+box-sizing: border-box;
+}
+
+.container{
+    border:10px solid #ccc;
+    max-width: 80%;
+    height: 1800px;
+    margin: 20px;
+    position: relative;
+}
+
+.position{
+   border: 5px solid black;
+    width: 100px;
+    height: 100px;
+}
+/* La posición estática es la que está por defecto */
+.static{
+    background-color: lightgreen;
+    /* EStá de forma predeterminada: */
+    display: block;
+    /* El elemento ocupa solamente el espacio que necesita: */
+    /* display: inline; */
+}
+
+
+.absolute{
+    /* Absolute se ubica en relación al ancestro relative más cercano. Si .container fuera estatíco, el div absolute se ubicaría en referencia al borde de la pá´gina y no del container. */
+    background-color: lightyellow;
+
+    position: absolute;
+        /* Absolute permite usar 4 propiedades más, permite referenciar una posición en relación al documento */
+
+    /* top: 0; */
+    right: 50px;
+    left: 0;
+    bottom: 0;
+}
+
+/* Relative posiciona el elemento en relación con los elementos cercanos */
+.relative{
+    background-color: lightblue;
+    position: relative;
+    bottom: 0;
+    left: 100px;
+
+}
+
+/* El elemento queda clavado en esa posición independientemente de que movamos la página, se posiciona en relación al viewport. Se usa mucho en menús de navegación para que siempre esté accesible. */
+.fixed{
+    background-color: crimson;
+    position: fixed;
+    right:0%;
+    top:0;
+}
+
+/* EL elemnto mantiene su posición hasta que usamos el scroll vertical u horizontal. Se referencia al padre. */
+.sticky{
+    background-color: orange;
+    position: sticky;
+    top: 20px;
+    left: 0;
+
+    
+    
+}
+
+.otro
+{
+    width: 20000px;
+    height: 200px;
+    background-color: green;
+}
